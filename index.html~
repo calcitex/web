@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CalciteX</title>
+    <link rel="icon" href="images/logo.jpeg">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<style>
+@keyframes zoom{from{transform:scale(0);opacity:0;} to{transform:scale(1);opacity:1;}}
+@keyframes zoomBox{from{transform:scale(0);opacity:0;} to{transform:scale(1);opacity:1;}}
+@keyframes zoom1{from{transform:scale(0);opacity:0;} to{transform:scale(1);opacity:1;}}
+@keyframes zoomBox1{from{transform:scale(0);opacity:0;} to{transform:scale(1);opacity:1;}}
+@keyframes serviceAnim{from{transform:scale(0);opacity:0;} to{transform:scale(1);opacity:1;}}
+</style>
+
+</head>
+
+<body onscroll="myfunction()">
+<div id="body" style="height:100%;">
+	<!--header-->
+	<div id="navbar">
+ 	<ul id="ul">
+		<div id="logo">
+	            <a onclick="document.documentElement.scrollTop=0;">CalciteX</a>
+		</div>
+		<div id="links">
+                <a onclick="document.documentElement.scrollTop=0;">Home</a>
+                <a onclick="document.documentElement.scrollTop=document.getElementById('aboutus').offsetTop-60;">About&nbspUs</a>
+                <a onclick="document.documentElement.scrollTop=document.getElementById('ourServices').offsetTop-60;">Services</a>
+                <a onclick="document.documentElement.scrollTop=document.getElementById('skills').offsetTop-60;">Skills</a>
+		<a onclick="document.documentElement.scrollTop=document.getElementById('Responsive').offsetTop-60;">Support</a>
+                <a onclick="document.documentElement.scrollTop=document.getElementById('workflow').offsetTop-60;">Work</a>
+		<!--<a href="#pricing">Pricing</a>-->
+                <a onclick="document.documentElement.scrollTop=document.getElementById('contact').offsetTop-60;">Contact&nbspUs</a>
+		</div>
+		<div>
+		</div>
+            </ul>
+	<a onclick="downArrowFun()" id="down-arrow"><i class="fa fa-angle-down"></i></a>
+	</div>
+	<div id="headerImg"></div>
+	<div id="header">
+
+            <!--<div class="logo">
+                <img src="logoCalcitex.JPG">
+            </div>-->
+
+	    <div class="navbar">
+		<p>Calcite X</p>
+		<p>Shaping the Uncut</p>
+	</div>
+
+
+	<!--	<div class="mainBox">
+            <div class="desc">
+                <h1>WE LOVE DESIGN </h1>
+            </div>
+
+            <div class="button">
+                
+                <a href="#aboutus" class="btn">LEARN MORE</a>
+            </div>
+		</div>-->
+
+	</div>
+
+	<!--About us-->
+<div id="aboutus" style="height:100%;width:100%;">
+<div id="leftbox">
+<p style="white-space:pre;color:#c6fdff;font-size:80px;font-family:leftTextfont;">
+WHAT
+WE 
+DO?
+</p>
+<br/>
+<!--<hr style="border:1px solid #c6fdff;width:90%;"/>
+<br/>
+<p style="font-size:25px;color:#c6fdff;font-family:leftTextfont">
+Our modest list of services to
+suit all your digital needs
+</p>-->
+</div>
+
+<div id="rightbox">
+<div id="Topcontent" style="color:white;font-size:30px;height:20%;display:flex;justify-content:center;padding-bottom:2%;">
+Our modest list of services to
+suit all your digital needs
+</div>
+
+<div class="doubleBox">
+
+<div id="contentBox">
+<div>
+<i class="fa fa-heart" style="font-size:70px;color:white;"></i>
+<!--<img src="images/1.jpeg">-->
+</div>
+<div class="mainBox">
+<h2 >Clean & Modern:</h2>
+<br/>
+A fabulous collection of unique design ideas with custom-made interfaces.
+</div>
+</div>
+<div id="contentBox">
+<div >
+<i class="fa fa-area-chart" style="font-size:70px;color:white;"></i>
+<!--<img src="images/2.jpeg">-->
+</div>
+<div class="mainBox">
+<h2>Unique Design: </h2>
+<br/>
+Modern, Industrial, Clean design….and the list goes on. 
+</div>
+</div>
+</div>
+
+<div class="doubleBox">
+<div id="contentBox">
+<div >
+<i class="fa fa-wrench" style="font-size:70px;color:white;"></i>
+<!--<img src="images/3.jpeg">-->
+</div>
+<div class="mainBox">
+<h2>Pixel Perfect:</h2>
+<br/>
+Custom Tailored To Match Your Needs And Requirements
+</div>
+</div>
+<div id="contentBox">
+<div>
+<i class="fa fa-users" style="font-size:70px;color:white;"></i>
+<!--<img src="images/4.jpeg">-->
+</div>
+<div class="mainBox">
+<h2>Cool Staff:</h2>
+<br/>
+Let’s be honest, everyone looks for a “cool” staff to work with.
+</div>
+</div>
+</div>
+
+
+<div class="doubleBox">
+<div id="contentBox">
+<div>
+<i class="fa fa-laptop" style="font-size:70px;color:white;"></i>
+<!--<img src="images/5.jpeg">-->
+</div>
+<div class="mainBox">
+<h2>Responsive: </h2>
+<br/>
+Responsiveness is the essential mix of flexible grids and layouts, images, and an intelligent use of media queries.
+</div>
+</div>
+<div id="contentBox">
+<div>
+<!--<img src="images/6.jpeg">-->
+<i class="fa fa-headphones" style="font-size:70px;color:white;"></i>
+</div>
+<div class="mainBox">
+<h2>Great Support:</h2>
+<br/>
+Trouble-free support is what we offer.
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+	<!--<div id="aboutus">
+	<div class="top">
+	 <center><h1 class="h1" style="color:#000;font-weight:bolder;font-size:50px;">ABOUT<span style="font-weight: bolder; color:rgb(255,2,108); font-size: 3rem;"> US</span></h1></center>
+	</div>
+	<div class="bottom">
+	<h1 style="font-weight:bolder;margin-bottom:30px;">What We Do</h1>
+	<li>
+	At CalciteX we develop innovative and creative products and services that provide total communication and information solutions. Among a plethora of services, web design and development, tailor made applications, ERPs, CRMs, e-commerce solutions, business-to-business applications, business-to-client applications, managed hosting and internet portal management are few that we offer. We also lead in Digital Marketing, splendid Graphic designing, and Social Media Management. Satisfied clients around the globe bear testimony to the quality of our work.
+	</li>
+	<br>
+	<li>Our business philosophy is to assure the highest quality product, total client satisfaction, timely delivery of solutions, and the best quality/price ratio found in the industry.
+	Our emphasis is on offering a high degree of product user friendliness through a positive, creative, and focused company staff.</li>
+	</div>
+	</div>-->
+<!--about us-->
+<!--
+<div id="aboutus">
+ <h1 class="h1" style="color:#000;font-weight:bolder;font-size:50px;">ABOUT<span style="font-weight: bolder; color:rgb(255,2,108); font-size: 3rem;"> US</span></h1>
+
+        <div class="cards">
+            <div class="card1">
+                <div class="top">
+                    <div class="logo"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                    <div class="tlte"><h3>CLEAN & MODERN</h2></div>
+                </div>
+                <div class="middle">
+                       <p class="mid"> Modern, Industrial, Clean design….and the list goes on. A significant challenge many of our clients face is a lack of understanding or vocabulary to describe and define their Web-App design style. We get it delivered. </p> 
+                </div>
+                <div class="bottom">
+                    <a href="#">learn more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                </div>     
+            </div>
+            <div class="card1">
+                <div class="top">
+                    <div class="logo"><i class="fa fa-area-chart" aria-hidden="true"></i></div>
+                    <div class="tlte"><h3>UNIQUE DESIGN</h2></div>
+                </div>
+                <div class="middle">
+                       <p class="mid">A fabulous collection of unique design ideas with custom-made interfaces is a true work of design and style. With an abundance of unique design styles, we offer you customization and Modern style.</p> 
+                </div>
+                <div class="bottom">
+                    <a href="#">learn more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                </div>     
+            </div>
+            <div class="card1">
+                <div class="top">
+                    <div class="logo"><i class="fa fa-wrench" aria-hidden="true"></i></div>
+                    <div class="tlte"><h3>PIXEL PROJECT</h2></div>
+                </div>
+                <div class="middle">
+                       <p class="mid">If owning a piece of history is what you desire, Pixels Projects are the ones you need. Pixel Projects are inspired by Million-Dollar Homepages. There are millions of websites and the ones which stand out are the ones that leave a mark on the viewers. </p> 
+                </div>
+                <div class="bottom">
+                    <a href="#">learn more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                </div>     
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card2">
+                <div class="top">
+                    <div class="logo"><i class="fa fa-users" aria-hidden="true"></i></div>
+                    <div class="tlte"><h3>COOL STAFF</h2></div>
+                </div>
+                <div class="middle">
+                       <p class="mid">Let’s be honest, everyone looks for a “cool” staff to work with. We are a special workspace company, CalciteX thrives on creativity and that thought has very much gone into the reasoning behind the work culture, providing every employee with a space for them to be creative.</p> 
+                </div>
+                <div class="bottom">
+                    <a href="#">learn more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                </div>     
+            </div>
+            <div class="card2">
+                <div class="top">
+                    <div class="logo"><i class="fa fa-laptop" aria-hidden="true"></i></div>
+                    <div class="tlte"><h3>RESPONSIVE</h2></div>
+                </div>
+                <div class="middle">
+                       <p class="mid">Almost every Client wants a Mobile Version of their website. Responsiveness is the essential mix of flexible grids and layouts, images, and an intelligent use of media queries.</p> 
+                </div>
+                <div class="bottom">
+                    <a href="#">learn more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                </div>     
+            </div>
+            <div class="card2">
+                <div class="top">
+                    <div class="logo"><i class="fa fa-headphones" aria-hidden="true"></i></div>
+                    <div class="tlte"><h3>GREAT SUPPORT</h2></div>
+                </div>
+                <div class="middle">
+                       <p class="mid"> Proactive chat, audio, and video Support. Trouble-free support is what we offer. Every request is responded by the supervisors directly. </p> 
+                </div>
+                <div class="bottom">
+                    <a href="#">learn more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                </div>     
+            </div>
+        </div>
+    </div>
+   -->
+	<!--Our services-->
+<!--
+        <section id="services">
+        <div class="services">
+            <h1 class="heading" style="color:rgb(214, 199, 206); text-align: center; ">OU<span style="font-weight: bolder; color:rgb(255,2,108); font-size: 3rem;">R</span> SERVICES</h1>
+            <div class="cen">
+                <div class="service">
+                    <i class="fas fa-tv"></i>
+                    <h2>WEB DEVELOPMENT</h2>
+                    <br>
+                    <p>CalciteX cybernetics provides you worlds trending and best technology. While it comes to Web Development its our best and most demanding service with 100% gurranted satisfaction</p>
+                </div>
+
+                <div class="service">
+                    <i class="fab fa-android"></i>
+                    <h2>MOBILE APPS</h2>
+                    <br>
+                    <p>With growing demand in this digital world we at CalciteX Cybernetics  committed to provide a mobile app which meets your business needs with an attractive price tag in mind.</p>
+                </div>
+                <div class="service">
+                    <i class="fab fa-android"></i>
+                    <h2>DIGITAL MARKETING</h2>
+                    <br>
+                    <p>We at CalciteX cybernetics provide businesses of all sizes with an opportunity to market their brand 24/7 at a low cost. From startups to medium-sized enterprises to multiple-location companies</p>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+	<!-- work start-->
+<!--
+	<div id="worx" style="margin-top:50px;">
+ <h1 class="h1" style="color:#000;font-weight:bolder;font-size:50px;">OUR WO<span style="font-weight: bolder; color:rgb(255,2,108); font-size: 3rem;">R</span>X.!</h1>
+	<div class="worx">
+		<div>
+			<ul>
+			<li><img src="icons/app.png"/> App development</li>
+			<li><img src="icons/web.png"/> Web development</li>
+			<li><img src="icons/marketing.png"/> Marketing</li>
+			<li><img src="icons/design.png"/> UI design</li>
+			<li><img src="icons/time.png"/> Support</li>
+			</ul>
+		</div>
+		<div>
+		<img src="images/work.jpeg">
+		<img src="images/work_time.jpeg">
+		<img src="images/work_support.jpeg">
+		<img src="images/work_app.jpeg">
+		<img src="images/work_web.jpeg">
+		<img src="images/work_design.jpeg">
+		</div>
+	</div>
+	</div>-->
+
+<!--our services-->
+ <!--<h1 class="heading" id="ourServicesheading" style="background:black;color:rgb(214, 199, 206);padding-top:50px; text-align: center; ">OU<span style="font-weight: bolder; color:rgb(255,2,108); font-size: 3rem;">R</span> SERVICES</h1>-->
+	<div id="ourServices">
+	<div id="mainService">
+	<div id="content" style="width:35%;height:400px;padding-bottom:50px;border-radius:10px;margin-top:0px;margin-left:0%;border:1px solid transparent;">
+	<div id="heading" >
+	OUR
+	SERVICES
+	</div>
+	<div id="innercontent">
+
+	</div>
+	</div>
+
+	<div style="width:40%;height:150%;margin-left:20%;margin-top:300px;">
+
+	<div  onclick="ServiceFunction()" id="main" style="width:100px;height:100px;border-radius:10%;display:flex;flex-direction:column;" >
+	<img class="imgServices" style="width:100%;height:100%;margin:50% 50%;transform-origin:15% 15%;" src="icons_color/pin.png"/>
+	<div id="mainServiceContent" style="margin-right:-30%;color:white;font-family:blinker;">Click Needle</div>
+	</div>
+
+	<div id="one0" onmouseover="display(event)" class="services" style="width:100px;height:100px;border-radius:10%;">
+	<img id="temp0" onmouseover="display(event)" style="width:100%;height:100%;" src="icons_color/design.png">
+	<div id="temp0" id="contentService">Design</div>
+	</div>
+	<div id="one1" onmouseover="display(event)"  class="services" style="width:100px;height:100px;border-radius:10%;">
+	<img id="temp1" onmouseover="display(event)" style="width:100%;height:100%;" src="icons_color/web.png"/>
+	<div id="temp1" id="contentService">Web</div>
+	</div>
+	<div id="one2" onmouseover="display(event)"  class="services" style="width:100px;height:100px;border-radius:10%;">
+	<img id="temp2" onmouseover="display(event)" style="width:100%;height:100%;" src="icons_color/marketing.png"/>
+	<div id="temp2" id="contentService">Marketing</div>
+	</div>
+	<div id="one3" onmouseover="display(event)"  class="services" style="width:100px;height:100px;border-radius:10%;">
+	<img id="temp3" onmouseover="display(event)" style="width:100%;height:100%;" src="icons_color/app.png"/>
+	<div id="temp3" id="contentService">App</div>
+	</div>
+	<div id="one4" onmouseover="display(event)"  class="services" style="width:100px;height:100px;border-radius:10%;">
+	<img id="temp4" onmouseover="display(event)" style="width:100%;height:100%;" src="icons_color/work.png"/>
+	<div id="temp4" id="contentService">Support</div>
+	</div>
+	<!--<div id="one5" onmouseover="display(event)"  class="services" style="width:100px;height:100px;border-radius:10%;">
+	<img id="temp5" onmouseover="display(event)" style="width:100%;height:100%;" src="icons_color/chemical.png"/>
+	<div id="temp5" id="contentService">Chemical</div>
+	</div>-->
+	</div>
+	</div>
+	</div>
+
+    <!---skills start-->
+	<div id="skills">
+  <!--  <h1 class="heading" style="color:BLACK; text-align: center; ">ABOUT SK<span style="font-weight: bolder; color:rgb(255,2,108); font-size: 3rem;">I</span>LLS</h1>-->
+	<div id="skillsLeft">
+	OUR<br/>
+	SKILLS
+	</div>
+	
+    <div class="skills">
+                <div class="skill-bars">
+                    <div class="bar">
+			<div style="width:20%;font-size:50px;">
+			93%
+			</div>
+			<div style="width:80%;">
+                        <div class="info">
+                            <span>FRONTEND</span>
+                        </div>
+                        <div class="progress-line html">
+                            <span></span>
+                        </div>
+			</div>
+                    </div>
+                    <div class="bar">
+			<div style="width:20%;font-size:50px;">
+			80%
+			</div>
+			<div style="width:80%;">
+                        <div class="info">
+                            <span>BACKEND</span>
+                        </div>
+                        <div class="progress-line css">
+                            <span></span>
+                        </div>
+			</div>
+                    </div>                   
+                    <div class="bar">
+			<div style="width:20%;font-size:50px;">
+			88%
+			</div>
+			<div style="width:80%;">
+                        <div class="info">
+                            <span>DATABASE MANAGEMENT</span>
+                        </div>
+                        <div class="progress-line jquery">
+                            <span></span>
+                        </div>
+			</div>
+                    </div>
+                    <div class="bar">
+			<div style="width:20%;font-size:50px;">
+			82%
+			</div>
+			<div style="width:80%;">
+                        <div class="info">
+                            <span>MARKETING</span>
+                        </div>
+                        <div class="progress-line mysql">
+                            <span></span>
+                        </div>
+			</div>
+                    </div>
+                    <div class="bar">
+			<div style="width:20%;font-size:50px;">
+			90%
+			</div>
+			<div style="width:80%;">
+                        <div class="info">
+                            <span>SEO</span>
+                        </div>
+                        <div class="progress-line python">
+                            <span></span>
+                        </div>
+			</div>
+                    </div>
+
+             	</div>
+
+        <!--<div class="accordion">
+            <div class="contentBx">
+                <div class="label">UNIQUE DESIGN</div>
+                <div class="content">
+                    <p>A fabulous collection of unique design ideas with custom-made interfaces is a true work of design and style. With an abundance of unique design styles, we offer you customization and Modern style.</p>
+                </div>
+            </div>
+            <div class="contentBx">
+                <div class="label">GREAT SERVICE</div>
+                <div class="content">
+                    <p> Proactive chat, audio, and video Support. Trouble-free support is what we offer. Every request is responded by the supervisors directly. </p>
+                </div>
+            </div>
+            <div class="contentBx">
+                <div class="label">EXPERIENCE TEAM</div>
+                <div class="content">
+                    <p>Let’s be honest, everyone looks for a “cool” staff to work with. We are a special workspace company, CalciteX thrives on creativity and that thought has very much gone into the reasoning behind the work culture, providing every employee with a space for them to be creative.</p>
+                </div>
+            </div>
+        </div>
+    </div>-->
+	</div>
+    <script>
+        const accordion = document.getElementsByClassName('contentBx');
+
+        for (i = 0; i < accordion.length; i++) {
+            accordion[i].addEventListener('click', function() {
+                this.classList.toggle('active')
+            })
+        }
+    </script>
+	</div>
+
+
+<!--our team start-->
+
+<!--	<div id="ourTeam">
+
+	<div id="Teamleftbox">
+	<p style="margin-left:15%;font-size:80px;">
+	MEET<br/>
+	OUR<br/>
+	TEAM
+	</p><br/>
+	<p style="font-size:20px;margin-left:17%;margin-top:0%;">
+	Get to know us<br/>
+	much better
+	</p>
+	</div>
+
+	<div id="Teamrightbox">
+	<div id="TeamMainBox">
+	<div id="box0" onmousedown="detailsFunction(event)" onmouseover="imgFunction(event)" onmouseout="imgFunction1(event)" style="background:url('images/shanmukh.jpeg');background-size:100% 100%;display:flex;align-items:center;justify-content:center;width:35%;height:30%;color:white;transition:2s;">
+	</div>
+	<div id="box1" onmousedown="detailsFunction(event)" onmouseover="imgFunction(event)" onmouseout="imgFunction1(event)" style="background:url('images/sai.png');background-size:100% 100%;display:flex;align-items:center;justify-content:center;width:35%;height:30%;color:white;transition:2s;">
+	</div>
+	<div id="box2" onmousedown="detailsFunction(event)" onmouseover="imgFunction(event)" onmouseout="imgFunction1(event)" style="background:url('images/bhargav.png');background-size:100% 100%;display:flex;align-items:center;justify-content:center;width:35%;height:30%;color:white;transition:2s;">
+	</div>
+	<div id="box3" onmousedown="detailsFunction(event)" onmouseover="imgFunction(event)" onmouseout="imgFunction1(event)" style="background:url('images/nvk2.jpeg');background-size:100% 130%;background-position:top;display:flex;align-items:center;justify-content:center;width:35%;height:30%;color:white;transition:2s;">
+	</div>
+	<div id="box4" onmousedown="detailsFunction(event)" onmouseover="imgFunction(event)" onmouseout="imgFunction1(event)" style="background:url('images/5.jpg');background-size:100% 100%;display:flex;align-items:center;justify-content:center;width:35%;height:30%;color:white;transition:2s;">
+	</div>
+	<div id="box5" onmousedown="detailsFunction(event)" onmouseover="imgFunction(event)" onmouseout="imgFunction1(event)" style="background:url('images/6.png');background-size:100% 100%;display:flex;align-items:center;justify-content:center;width:35%;height:30%;color:white;transition:2s;">
+	</div>
+	</div>
+
+	<div id="detailsBox">
+
+	<img onclick="backFunction()" id="backImg" style="width:5%;height:8%;" src="icons/arrow.png"/>
+
+	<div id="textBox1">
+	<p class="detailsEmployee" style="width:50%;">
+	TWO GHOSTLY WHITE FIGURES IN
+	COVERALLS AND HELMETS ARE
+	SOFTLY DANCING
+	</p>
+
+	<p class="detailsEmployee" style="width:50%;">
+	Lorem ipsum dolor sit amet whis jki jsios Cras pretium metus pulvinar ultricies auctor. In varius purus blandit sem mollis tristique.
+	</p>
+
+	</div>
+
+	<div id="textBox2">
+
+	<div style="width:48%;">
+	<p class="detailsEmployee">
+	Terry Jackobs, CEO very small stage in a vast cosmic arena great turbulent clouds ready so encyclopaedia galactica star stuff.
+	</p>
+	<br/><br/>
+	&nbsp&nbsp<i class="fa fa-facebook-official detailsEmployeeIcon" aria-hidden="true"></i>
+	&nbsp&nbsp<i class="fa fa-twitter detailsEmployeeIcon" aria-hidden="true"></i>
+	&nbsp&nbsp<i class="fa fa-instagram detailsEmployeeIcon" aria-hidden="true"></i>
+	&nbsp&nbsp<i class="fa fa-medium detailsEmployeeIcon" aria-hidden="true"></i>
+	<div style="margin-top:10%;">
+	<p class="detailsEmployee"><b>Name:</b>Terry Jackobs</p><br/>
+	<p class="detailsEmployee"><b>Age:</b>28</p><br/>
+	<p class="detailsEmployee"><b>Skills:</b>Php,.Net,Ajax</p>
+	</div>
+
+	</div>
+
+	<div style="width:50%;display:flex;justify-content:center;">
+	<img src="2.jpg" class="detailsEmployee" style="width:90%;height:70%;padding:5%;">
+	</div>
+
+	</div>
+
+	</div>
+	</div>
+	</div>
+-->
+<!--responsive page start-->
+	<div id="Responsive">
+	<div  id="responsive-top">
+	<div id="ResponsiveBox">
+
+	<div class="ResponsiveDiv">
+	<div style="width:49%;height:80%;display:flex;align-items:center;"> 
+	<p style="font-size:80px;width:50%;height:50%;margin-left:10%;font-family:tomorrow;">
+	24/7<br/>
+	DEDICATED<br/>
+	SUPPORT
+	</p>
+	</div>
+	<img src="icons/idea.png">
+	</div>
+
+	<div class="ResponsiveDiv" >
+	<div style="width:30%;">
+	<img style="width:50%;height:50%;margin-left:25%;" src="icons/responsive.png">
+	<br/>
+	<p style="text-align:center;font-weight:bolder;font-family:tomorrow;">Responsive</p>
+	<br/>
+	<p style="text-align:center;width:70%;margin-left:20%;">A Positive team who are ready to answer your quires at the earliest</p>
+	</div>
+	<div style="width:30%;">
+	<img style="width:50%;height:50%;margin-left:25%;" src="icons/chip.png">
+	<br/>
+	<p style="text-align:center;font-weight:bolder;font-family:tomorrow;">Community</p>
+	<br/>
+	<p style="text-align:center;width:70%;margin-left:20%;">An interactive community for everyone to Explore and Innovate new Ideas</p>
+	</div>
+	<div style="width:30%;">
+	<img style="width:50%;height:50%;margin-left:25%;" src="icons/time.png">
+	<br/>
+	<p style="text-align:center;font-weight:bolder;font-family:tomorrow;">ShowCase</p>
+	<br/>
+	<p style="text-align:center;width:70%;margin-left:20%;">A perfect platform for everyone who want to showcase their Creativity and Technical Knowledge</p>
+	</div>
+	</div>
+
+	<div class="ResponsiveDiv" >
+	<p style="width:80%;text-align:center;font-size:60px;font-family:tomorrow;color:#C6FDFF;">
+	DESIGN <img src="icons/add.png" style="width:5%;height:5%;"> DEVELOPMENT<br/>
+	&nbsp&nbsp&nbspMARKETING   <img src="icons/add.png" style="width:5%;height:5%;"> SOCIAL
+	</p>
+	</div>
+
+	<div class="ResponsiveDiv" id="Div1" >
+	<div style="width:49%;height:80%;display:flex;align-items:center;"> 
+	<p style="font-size:80px;width:50%;height:50%;margin-left:10%;font-family:tomorrow;">
+	24/7<br/>
+	DEDICATED<br/>
+	SUPPORT
+	</p>
+	</div>
+	<img src="icons/idea.png">
+	</div>
+
+	</div>
+
+	<div id="circles">
+	<button style="background:rgb(225,1,88);" onclick="responsiveFunction(0)" id="circle0"></button>
+	<button onclick="responsiveFunction(1)"  id="circle1"></button>
+	<button onclick="responsiveFunction(2)" id="circle2"></button>
+	</div>
+	</div>
+	</div>
+
+
+
+
+    <!--skills end-->
+    <!--Our work start-->
+	<div id="workflow">
+	<div id="workleftBox">
+	<p id="leftmsg">
+	HOW<br/>
+	WE<br/>
+	WORK?
+	</p>
+	</div>
+	<div id="workrightBox">
+	<div id="videoBox">
+	<button style="border:none;background:none;margin-top:30%;" onclick="videoFunction()" id="nextButton" ><img style="width:70%;height:70%;" src="icons/plane4.png"></button>
+	<video style="width:100%;height:60%;display:none;margin-top:30%;" src="plane_video/plane.mp4" id="planeVideo">
+	</div>
+	<div id="rightmsg">Click the plane to see how we work</div>
+	<!--<svg style="margin-left:10%;" width="500" height="100">
+	<path d="M0 0 Q200 40 150 80 C40 80 100 40 400 10 L400 10 390 30 L400 10 380 0" fill="none"  stroke-dasharray="5,5" stroke="black" stroke-width="2">
+	</svg>-->
+	</div>
+	</div>
+
+
+   <!-- <section id="works">
+        <div class="works">
+            <h1 class="heading" style="color:BLACK; text-align: center; ">HOW<span style="font-weight: bolder; color:rgb(255,2,108); font-size: 3rem;"> WE</span> WORK</h1>
+            <div class="cen">
+                <div class="work">
+                    <i class="fas fa-edit"></i>
+                    <h2>PLAN</h2>
+                </div>
+
+                <div class="work">
+                    <i class="fas fa-lightbulb"></i>
+                    <h2>IDEA</h2>
+                </div>
+
+                <div class="work">
+                    <i class="fas fa-drafting-compass"></i>
+                    <h2>SKETCH</h2>
+                </div>
+                <div class="work">
+                    <i class="fas fa-magic"></i>
+                    <h2>DESIGN</h2>
+                </div>
+
+                <div class="work">
+                    <i class="fas fa-laptop-code"></i>
+                    <h2>DEVELOP</h2>
+                </div>
+
+                <div class="work">
+                    <i class="far fa-check-circle"></i>
+                    <h2>LAUNCH</h2>
+                </div>
+
+            </div>
+        </div>
+    </section>-->
+    <!--our work ends-->
+    <!--clints-->
+  <!--  <h1 class="heading" style="color:black; text-align: center; font-size: 3rem; font-weight: strong bolder; ">OUR CLIE<span style="font-weight: bolder; color:rgb(255,2,108); font-size: 3rem;">N</span>T</h1>
+    <div class="client">
+        <ul>
+            <li>
+                <div class="cli">
+                    <a href="#"><img src="images/client1.png" alt="client1"></a>
+                </div>
+            </li>
+            <li>
+                <div class="cli">
+                    <a href="#"><img src="images/client2.png" alt="client2"></a>
+                </div>
+            </li>
+            <li>
+                <div class="cli">
+                    <a href="#"><img src="images/client3.png" alt="client3"></a>
+                </div>
+            </li>
+            <li>
+                <div class="cli">
+                    <a href="#"><img src="images/client4.png" alt="client4"></a>
+                </div>
+            </li>
+        </ul>
+    </div>-->
+    <!--cliensts end-->
+    <!--pricing table -->
+<!--
+    <section id="pricing" class="price-table">
+        <div class="container">
+            <h1 class="heading" style="color:black; text-align: center; font-size: 3rem; font-weight: strong bolder; ">PRIC<span style="font-weight: bolder; color:rgb(255,2,108); font-size: 3rem;">ING</span> TABLE</h1>
+            <div class="price_box">
+                <div class="price">
+		 <div class="price-head">
+                        <h2>Basic</h2>
+                        <p>$05/MON</p>
+                    </div>
+                    <div class="price-content">
+                        <ul>
+                            <li>1GB Storage</li>
+                            <li style="background-color: gray; color: white;">1GB Bandwidth</li>
+                            <li>1 Addon Domains</li>
+                            <li style="background-color: gray; color: white;">1 Sub Domain</li>
+                            <li>10 Email</li>
+                            <li style="background-color: gray; color: white;">1 Database</li>
+                            <li>1 Domain</li>
+                            <li style="background-color: gray; color: white;">No Support</li>
+                        </ul>
+                    </div>
+                    <div class="price-bottom">
+                        <a href="#" class="buy-btn">Select Plan</a>
+                    </div>
+		</div> 
+                <div class="price">
+		<div class="price-head">
+                        <h2>Personal</h2>
+                        <p>$10/MON</p>
+                    </div>
+                    <div class="price-content">
+                        <ul>
+                            <li>5GB Storage</li>
+                            <li style="background-color: gray; color: white;">5GB Bandwidth</li>
+                            <li>5 Addon Domains</li>
+                            <li style="background-color: gray; color: white;">50 Sub Domain</li>
+                            <li>50 Email</li>
+                            <li style="background-color: gray; color: white;">50 Database</li>
+                            <li>2 Domain</li>
+                            <li style="background-color: gray; color: white;">Support</li>
+                        </ul>
+                    </div>
+                    <div class="price-bottom">
+                        <a href="#" class="buy-btn">Select Plan</a>
+                    </div>
+		</div>  
+                <div class="price">
+		 <div class="price-head">
+                        <h2>Professional</h2>
+                        <p>$15/MON</p>
+                    </div>
+                    <div class="price-content">
+                        <ul>
+                            <li>10GB Storage</li>
+                            <li style="background-color: gray; color: white;">10GB Bandwidth</li>
+                            <li>10 Addon Domains</li>
+                            <li style="background-color: gray; color: white;">100 Sub Domain</li>
+                            <li>100 Email</li>
+                            <li style="background-color: gray; color: white;">100 Database</li>
+                            <li>5 Domain</li>
+                            <li style="background-color: gray; color: white;">Support</li>
+
+                        </ul>
+                    </div>
+                    <div class="price-bottom">
+                        <a href="#" class="buy-btn">Select Plan</a>
+                    </div>
+		</div>  
+                <div class="price">
+		 <div class="price-head">
+                        <h2>Business</h2>
+                        <p>$20/MON</p>
+                    </div>
+                    <div class="price-content">
+                        <ul>
+                            <li>50GB Storage</li>
+                            <li style="background-color: gray; color: white;">100GB Bandwidth</li>
+                            <li>50 Addon Domains</li>
+                            <li style="background-color: gray; color: white;">100 Sub Domain</li>
+                            <li>500 Email</li>
+                            <li style="background-color: gray; color: white;">500 Database</li>
+                            <li>10 Domain</li>
+                            <li style="background-color: gray; color: white;">Support</li>
+                        </ul>
+                    </div>
+                    <div class="price-bottom">
+                        <a href="#" class="buy-btn">Select Plan</a>
+                    </div>
+		</div>                
+            </div>
+
+        </div>
+    </section>
+-->
+    <!--pricing table ends-->
+    <!--contactus-->
+   <!-- <div id="contact">
+        <div class="contact">
+            <div class="contact-section">
+                <div class="contact-info">
+                    <div style="font-size: 40px;color:#EEB0DF;margin-bottom:30px;font-family:tomorrow;">Contact Us</div>
+                    <br>
+                    <p>Feel free to contact us anytime you want if you have any doubt about our services/packages</p>
+
+                    <br>
+                    <div>Email: support@calcitex.com</div>
+		    <br>
+                    <div>Phone/WhatsApp: +91 8179033458</div>
+                    <br>		
+                    <div>Address: Koushik Enclave, Bharathi Nagar Colony, Temple Alwal, Secunderabad, India - 500010</div>
+		 
+                </div>
+                <div class="contact-form">
+                    <form class="contact" action="" method="post">
+                        <div class="nm">
+                            <span style="color:#EEB0DF;">Your Name <input type="text" name="name" class="text-box"  required></span>
+                            <span style="color:#EEB0DF;">Your Email<input type="email" name="email" class="text-box"  required></span>
+                        </div>
+                        <span style="color:#EEB0DF;">Message</span><textarea name="msg" rows="5" required></textarea>
+                        <input type="submit" name="submit" class="send-btn" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+
+            <div class="copy">
+           	<p style="color:white; padding-left:2px;">Copyright &#169 2021 CalciteX </p>
+            </div>
+            <div class="social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+
+        </div>
+    </div>-->
+    <!--contactus end-->
+	<div id="contact">
+		<div id="contact-left">
+		STAY<br/>
+		IN<br/>
+		TOUCH
+		</div>
+	
+		<div id="contact-right">
+			<form action="mailto:support@calcitex.com" method="post" enctype="multipart/form-data">
+				<p></p>
+				<input type="text" placeholder="Name" name="name"/>
+				<input type="text" placeholder="Email" name="email"/>
+				<input type="text" placeholder="Subject" name="subject"/>
+				<textarea rows="8" placeholder="Message" name="message" cols="110"></textarea>
+				<input type="submit" value="submit">
+			</form>
+			<div id="contact-desc">
+				<div style="width:40%;">
+				
+				<p>Feel free to contact us anytime you want if you have any doubt about our services/packages</p>
+				</div>
+		
+				<div style="width:40%;">
+					<!--<p>Email: support@calcitex.com</p>
+					<br/>
+		         		<p>Phone/WhatsApp: +91 8179033458</p>
+					<br/>
+  		                        <p>Address: Koushik Enclave, Bharathi Nagar Colony, Temple Alwal, Secunderabad, India - 500010</p>-->
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<div id="footer">
+		<p>support@calcitex.com</p>
+		<p>+91 8179033458</p>
+		<p>Koushik Enclave</p>
+		<p>Bharathi Nagar Colony</p>
+		<p>Temple Alwal</p>
+		<p>Secunderabad</p>
+		<p>India - 500010</p>
+		<div style="display:flex;">
+		<a><i class="fab fa-instagram"></i></a>
+		<a><i class="fab fa-linkedin"></i></a>
+		</div><br/><br/>
+		<p>Copyright &#169 2021 CalciteX </p>
+	</div>
+</div>
+
+<div id="mobile" style="width:100%;height:100%;">
+<div style="width:100%;height:100%;background:black;display:flex;flex-direction:column;justify-content:center;">
+<img src="icons_color/hook.png" style="margin-left:5%;width:90%;height:50%;">
+<div style="animation:mobile 3s steps(1000,end);margin-top:5%;overflow:hidden;width:100%;margin-left:5%;">
+<p style="white-space:nowrap;font-size:20px;color:white;font-family:tomorrow;">Mobile view is under construction</p>
+</div>
+</div>
+</div>
+
+</body>
+
+
+<script>
+
+document.oncontextmenu=context;
+document.onselectstart=select;
+function context(){
+return false;
+}
+
+function select(){
+return true;
+}
+
+
+window.onload=starter();
+
+function starter(){
+if(window.innerWidth<1000){
+document.getElementById("body").style.display="none";
+document.getElementById("mobile").style.display="block";
+}
+else{
+document.getElementById("body").style.display="block";
+document.getElementById("mobile").style.display="none";
+}
+}
+
+var employee={
+	0:[
+		"0First sentence",
+		"0second sentence",
+		"0He is very talented person",
+		"0<b>Name:</b>Tony",
+		"0<b>Age:</b>30",
+		"0<b>skills:</b>php",
+		"images/shanmukh.jpeg"],
+	1:[
+		"1First sentence",
+		"1second sentence",
+		"1He is very talented person",
+		"1<b>Name:</b>Tony",
+		"1<b>Age:</b>30",
+		"1<b>skills:</b>php",
+		"images/sai.png"],
+	2:[
+		"2First sentence",
+		"2second sentence",
+		"2He is very talented person",
+		"2<b>Name:</b>Tony",
+		"2<b>Age:</b>30",
+		"2<b>skills:</b>php",
+		"images/bhargav.png"],
+	3:[
+		"3First sentence",
+		"3second sentence",
+		"3He is very talented person",
+		"3<b>Name:</b>Tony",
+		"3<b>Age:</b>30",
+		"3<b>skills:</b>php",
+		"images/nvk2.jpeg"],
+	4:[
+		"4First sentence",
+		"4second sentence",
+		"4He is very talented person",
+		"4<b>Name:</b>Tony",
+		"4<b>Age:</b>30",
+		"4<b>skills:</b>php",
+		"images/5.jpg"],
+	5:[
+		"5First sentence",
+		"5second sentence",
+		"5He is very talented person",
+		"5<b>Name:</b>Tony",
+		"5<b>Age:</b>30",
+		"5<b>skills:</b>php",
+		"images/6.png"],
+};
+
+var employment=["CEO","Lead Software Developer","Coder","Full Stack Web Developer","Frontend","Designer"];
+
+function backFunction(){
+var a1=document.getElementById("detailsBox");
+var a2=document.getElementById("TeamMainBox");
+a1.style.display="none";
+a2.style.display="flex";
+}
+
+function detailsFunction(event){
+var id=event.target.id;
+var a1=document.getElementById("detailsBox");
+var a2=document.getElementById("TeamMainBox");
+var num=id.charAt(id.length-1);
+var details=employee[num];
+var elements=document.getElementsByClassName("detailsEmployee");
+for(i=0;i<elements.length-1;i++){
+elements[i].innerHTML=details[i];
+}
+elements[i].src=details[i];
+a1.style.display="block";
+a2.style.display="none";
+}
+
+
+function imgFunction(event){
+var id=event.target.id;
+var num=id.charAt(id.length-1);
+var a1=document.getElementById(id);
+a1.style.background="black";
+a1.innerText=employment[num];
+}
+
+function imgFunction1(event){
+var id=event.target.id;
+var num=id.charAt(id.length-1);
+var a1=document.getElementById(id);
+a1.innerText="";
+a1.style.background=`url(${employee[num][6]})`;
+a1.style.backgroundSize="100% 100%";
+
+}
+
+
+var clearParam=0;
+var IndexRes=-1;
+var interval=window.setInterval(responsiveFunction1,4000);
+
+function responsiveFunction(event){
+if(event==2) IndexRes=0;
+if(event==1) IndexRes=2;
+if(event==0) IndexRes=1;
+clearInterval(interval);
+clearParam=1;
+responsiveFunction1();
+}
+
+function responsiveFunction1(){
+IndexRes++;
+if(IndexRes==3){IndexRes=0;}
+var imgs=document.getElementsByClassName("ResponsiveDiv");
+var mainBox=document.getElementById("ResponsiveBox");
+
+for(i=0;i<3;i++){
+var id="circle"+i;
+var circle=document.getElementById(id);
+circle.style.background="white";
+
+}
+
+var id="circle"+(IndexRes+1)%3;
+var circle=document.getElementById(id);
+circle.style.background="rgb(225,1,88)";
+
+if(IndexRes==0){ mainBox.style.animationName="scrollAnim";mainBox.style.animationDuration="1s";}
+if(IndexRes==1){ mainBox.style.animationName="scrollAnim1";mainBox.style.animationDuration="1s";}
+if(IndexRes==2) { mainBox.style.animationName="scrollAnim2";mainBox.style.animationDuration="1s";}
+if(clearParam==1){
+clearParam=0;
+interval=window.setInterval(responsiveFunction1,4000);
+}
+}
+
+
+var videoParam=document.getElementById("planeVideo");
+var lefttext=document.getElementById("leftmsg");
+var rightText=document.getElementById("rightmsg");
+var ButtonParam=document.getElementById("nextButton");
+var displayParam;
+var indexParam=0;
+var msgs=["PLAN","IDEA","SKETCH","DESIGN","IMPLEMENT"];
+
+function videoFunction(){
+videoParam.style.display="block";
+indexParam=-1;
+rightText.style.display="none";
+ButtonParam.style.display="none";
+displayParam=window.setInterval(displayMsg,1500);
+videoParam.playbackRate=0.5;
+videoParam.play();
+}
+
+//videoParam.onended=function(){videoParam.play();videoParam.pause();};
+
+function displayMsg(){
+indexParam++;
+if(indexParam==5){
+clearInterval(displayParam);
+videoParam.style.display="none";
+rightText.style.display="block";
+rightText.style.marginTop="-20%";
+ButtonParam.style.display="block";
+lefttext.innerHTML="HOW<br/>WE<br/>WORK?";
+}
+else{
+if(lefttext.style.animationName=="zoomBox1") lefttext.style.animationName="zoom1";
+else lefttext.style.animationName="zoomBox1";
+lefttext.style.animationDuration="1s";
+lefttext.innerHTML=msgs[indexParam];}
+}
+
+
+function downArrowFun(){
+var about=document.getElementById("aboutus");
+var service=document.getElementById("ourServices");
+var skills=document.getElementById("skills");
+var responsive=document.getElementById("Responsive");
+var workflow=document.getElementById("workflow");
+var contact=document.getElementById("contact");
+var footer=document.getElementById("footer");
+var arrow=document.getElementById("down-arrow");
+var scrollrecog=document.documentElement;
+
+if(about.offsetTop-scrollrecog.scrollTop>150){
+scrollrecog.scrollTop=about.offsetTop-60;
+}
+else if(about.offsetTop-scrollrecog.scrollTop<=80 && service.offsetTop-scrollrecog.scrollTop>80){
+scrollrecog.scrollTop=service.offsetTop-60;
+}
+else if(service.offsetTop-scrollrecog.scrollTop<=80 && skills.offsetTop-scrollrecog.scrollTop>80){
+scrollrecog.scrollTop=skills.offsetTop-60;
+}
+else if(skills.offsetTop-scrollrecog.scrollTop<=80 && responsive.offsetTop-scrollrecog.scrollTop>80){
+scrollrecog.scrollTop=responsive.offsetTop-60;
+}
+else if(responsive.offsetTop-scrollrecog.scrollTop<=80 && workflow.offsetTop-scrollrecog.scrollTop>80){
+scrollrecog.scrollTop=workflow.offsetTop-60;
+}
+else if(workflow.offsetTop-scrollrecog.scrollTop<=80 && contact.offsetTop-scrollrecog.scrollTop>80){
+scrollrecog.scrollTop=contact.offsetTop-60;
+}
+else if(contact.offsetTop-scrollrecog.scrollTop<=80 && footer.offsetTop-scrollrecog.scrollTop>80){
+scrollrecog.scrollTop=footer.offsetTop-60;
+}
+else if(footer.offsetTop-scrollrecog.scrollTop<=80){
+scrollrecog.scrollTop=0;
+}
+
+
+}
+
+
+
+function myfunction(){
+var aboutBox=document.getElementsByClassName("doubleBox");
+var navbar=document.getElementById("ul");
+var progress=document.getElementsByClassName("progress-line");
+var about=document.getElementById("aboutus");
+var icon=document.getElementById("headerImg");
+var footer=document.getElementById("footer");
+var arrow=document.getElementById("down-arrow");
+var scrollrecog=document.documentElement;
+
+if(footer.offsetTop-scrollrecog.scrollTop<=80){
+var top=arrow.children;
+top[0].className="fa fa-angle-up";
+}
+
+if(footer.offsetTop-scrollrecog.scrollTop>80){
+var top=arrow.children;
+top[0].className="fa fa-angle-down";
+}
+
+if(about.offsetTop-document.documentElement.scrollTop>550){
+icon.style.display="block";
+}
+
+if(about.offsetTop-document.documentElement.scrollTop<700 && window.innerWidth>1700){
+icon.style.display="none";
+}
+
+
+if(about.offsetTop-document.documentElement.scrollTop<550){
+icon.style.display="none";
+}
+
+if(about.offsetTop-document.documentElement.scrollTop<100){
+navbar.style.background="black";
+for(i=0;i<aboutBox.length;i++){
+aboutBox[i].style.animationName="zoomBox";
+aboutBox[i].style.animationDuration="2s";
+aboutBox[i].style.animationDelay=i/2+"s";
+aboutBox[i].style.animationFillMode="both";
+}
+}
+else{
+navbar.style.background="transparent";
+}
+if(progress[0].offsetTop-document.documentElement.scrollTop<300){
+for(i=0;i<progress.length;i++){
+progress[i].style.animation="animate 1s cubic-bezier(1, 0, 0.5, 1) forwards";
+}
+}
+}
+
+function ServiceFunction(){
+var heading=document.getElementById("heading");
+var content=document.getElementById("content");
+var inContent=document.getElementById("innercontent");
+var serviceContent=document.getElementById("mainServiceContent");
+heading.style.fontFamily="serviceFont";
+heading.innerHTML="our service";
+heading.style.whiteSpace="normal";
+heading.style.fontSize="25px";
+heading.style.fontFamily="tomorrow";
+heading.style.marginLeft="2%";
+heading.style.marginTop="30%";
+content.style.marginLeft="5%";
+serviceContent.style.animationName="serviceAnim";
+serviceContent.style.animationDuration="1s";
+serviceContent.innerText="Our Services";
+serviceContent.style.display="none";
+inContent.innerHTML="<li>App Development</li><br/> <li>Web Development </li><br/> <li>UI & UX Design</li> <br/> <li>Digital Marketing</li> <br/> <li>Support</li>";
+var main=document.getElementById("main");
+var ele=document.getElementsByClassName("services");
+for(i=0;i<ele.length;i++){
+ele[i].style.display="block";
+ele[i].style.animationName="servicesAnim";
+ele[i].style.animationDuration="1s";
+ele[i].style.animationDelay=(i/5)+"s";
+}
+}
+
+var headings=["UI design","Web Development","Digital Marketing","App Development","Support"/*,"Chemical Engineering"*/];
+var content=[
+"<p>A Fabulous Collection Of Unique Design Ideas With Custom-Made Interfaces Is A True Work Of Design And Style. Design is one of the most important factors when building a brand.</p> <br/><p>The design is what will set you apart from your competition and help you get the desired emotion or feeling from customers.With An Abundance Of Unique Design Styles, We Offer You Customization And Modern Style.</p>",
+" <p>A website establishes your Business, adds value and credibility. In the cyber world, there are millions of websites, no matter how good your services are; the main goal is to stand out.</p><br/><p>Here with Cutting edge designs and functionality, we design the exact website you need for your business.While It Comes To Web Development Its Our Best And Most Demanding Service With 100% Guaranteed Satisfaction</p>",
+"<p>Around 4 Billion People use Social Media in the current scenario, and the numbers are still growing exponentially. Your customers are online, which highlights the importance of digital marketing. They’re browsing the web looking for your products or services.<p> <br/><p>If they can’t find your products because you don’t have an online presence, you risk losing those leads to your competitors.We at CalciteX Provide Businesses Of All Sizes With An Opportunity To Market Their Brand 24/7 At A Low Cost. From Startups To Medium-Sized Enterprises To Multiple-Location Companies",
+"<p>With Growing demand in this Digital World we are committed to develop the perfect Mobile Application that your Business needs.</p><br/><p> With an Attractive Price in mind we have an answer to your requests, if your business is struggling or you want to reach more people, a Mobile 		Application is what you need.We are Experts in the fields of</p> <br/> <li>E-Commerce</li><li>Restaurants, Nightlife and Clubs</li><li>Jewellery store </li><li>Small Business Owners … And many more</li>",
+"<p>Proactive chat, audio, and video Support. Trouble-free support is what we offer. Every request is responded by the supervisors directly.</p>"
+/*,"<p>We help our Clients with Analysis of current status of the Products and Enhance the quality of it.We believe in Recycling Plastics and Analyse the Break-even costs for the Production.</p>"*/
+]
+var number="";
+function display(event){
+var needle=document.getElementsByClassName("imgServices")[0];
+if(event.target.id.charAt(event.target.id.length-1)!=number){
+	number=event.target.id.charAt(event.target.id.length-1);
+	needle.style.animationName="temp";
+	needle.style.animationDuration="1s";
+	var degree;
+	if(number==0){degree=10;}
+	else if(number==1){degree=65;}
+	else if(number==2){degree=158;}
+	else if(number==3){degree=245;}
+	else if(number==4){degree=295;}
+	else {degree=(number)*70;}
+	degree=degree+70+"deg";
+	needle.style.transform=`rotate(${degree})`;
+	var ele=document.getElementById("heading");
+	var inContent=document.getElementById("innercontent");
+if(ele.style.animationName!="opacityAnim"){ele.style.animationName="opacityAnim";inContent.style.animationName="opacityAnim";}
+else{ele.style.animationName="opacity1Anim";inContent.style.animationName="opacity1Anim";}
+ele.style.animationDuration="2s";
+inContent.style.animationDuration="2s";
+ele.innerHTML=headings[number];
+inContent.innerHTML=content[number];}
+
+}
+
+
+</script>
+
+</html>
+
+
+
