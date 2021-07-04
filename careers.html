@@ -1,0 +1,351 @@
+<!doctype html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<title>Careers | CalciteX</title>
+<style>
+*{font-family:sans-serif;}
+/*::-webkit-scrollbar{width:5px;background:white;}*/
+/*::-webkit-scrollbar-thumb{width:95%;height:10%;background:black;border-radius:10px;}*/
+body,html{height:100%;width:99.5%;}
+#top{height:60%;width:100%;position:absolute;top:0;left:0;background:black;color:white;display:flex;flex-direction:column;justify-content:center;align-items:center;line-height:5%;color:white;}
+#images{display:flex;flex-wrap:wrap;width:100%;height:100%;}
+#images img{width:25%;height:50%;opacity:0.4;}
+#top p:nth-child(2){font-size:60px;position:absolute;}
+#top p:nth-child(3){font-size:30px;position:absolute;margin-top:12%;}
+
+#test{width:100%;height:80%;margin-top:40%;overflow:hidden;}
+#test-slide{width:400%;display:flex;height:80%;}
+#test-image{width:7%;height:21%;border:1px solid transparent;border-radius:100%;background-position:top;background-size:100%;100%;}
+#test-content{width:25%;height:100%;display:flex;flex-direction:column;justify-content:space-around;align-items:center;}
+#test-content p{font-size:20px;width:60%;text-align:center;line-height:25px;}
+#test-content i{font-size:80px;}
+#test-box{width:100%;height:20%;display:flex;justify-content:center;align-items:center;margin-left:1%;}
+.button{cursor:pointer;width:20px;height:20px;background:black;border:2px solid black;border-radius:100%;margin-right:2%;}
+
+@keyframes first{from{margin-left:0%;} to{margin-left:-100%;}}
+@keyframes second{from{margin-left:-100%;} to{margin-left:-200%;}}
+@keyframes three{from{margin-left:-200%;} to{margin-left:-300%;}}
+
+#perks{width:80%;display:flex;flex-wrap:wrap;justify-content:space-between;height:120%;margin:10% 10% 0% 10%;}
+.perks-content{opacity:0;text-align:center;margin-bottom:3%;line-height:25px;width:45%;height:35%;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+#perks-content p{color:#444}
+
+#bottom{margin:20% 20% 0% 20%;width:60%;height:20%;padding-bottom:15%;}
+#bottom-box{width:100%;margin-top:10%;height:100%;display:flex;flex-direction:row;justify-content:space-between;align-items:center;}
+#bottom-content{display:flex;flex-direction:column;justify-content:flex-end;height:80%;margin-left:0%;width:30%;margin-bottom:1%;border:2px solid #aaa;border-radius:5px;padding:1% 1% 3% 1%;}
+@media only screen and (min-width:1500px){
+#bottom-content{height:50%;}
+#bottom-box{margin-top:5%;}
+#test{height:50%;}
+#perks{height:80%;}
+}
+
+.card{width:28%;height:65%;margin-top:5%;border-radius:10px;transition:1s;}
+.card-front{border-radius:10px;background:#eee/*linear-gradient(130deg,#00fb 25%,#0f05)*/;display:flex;width:100%;height:100%;flex-direction:column;justify-content:center;align-items:center;}
+.card-front p{font-size:30px;color:black;opacity:0;animation:opacityAnim 2s;animation-fill-mode:both;}
+
+.card-back{overflow-y:scroll;border-radius:10px;opacity:1;width:100%;height:100%;border:1px solid #aaa;}
+.card-back img{width:100%;height:50%;border-radius:10px 10px 0px 0px;opacity:0;animation:opacityAnim 2s;animation-fill-mode:both;}
+#card-content{opacity:0;animation:opacityAnim 2s;animation-fill-mode:both;display:flex;flex-direction:column;justify-content:space-around;width:94%;padding:0% 3% 6% 3%;}
+.card-back #card-content p:nth-child(1){font-size:30px;color:black;}
+.card-back #card-content p:nth-child(2){margin-top:-5%;font-size:17px;line-height:25px;text-indent:10%;}
+.card-back #card-content a{transition:1s;text-decoration:none;}
+
+.card-back a:hover{margin-left:2%;transition:1s;}
+#bottom-cards{height:100%;margin-top:3%;display:flex;justify-content:space-around;}
+
+@keyframes opacityAnim{from{opacity:0;} to{opacity:1;}}
+@keyframes widthAnim{from{width:0%;} to{width:95%;}}
+
+.card-back{display:none;}
+/*.card:hover{transform:rotateY(180deg);transition:1s;}
+.card:hover .card-front{display:none;}
+.card:hover .card-back{display:block;transform:rotateY(-180deg);}*/
+
+@media only screen and (min-width:1500px){
+#test-image{width:8%;height:35%;}
+#bottom-cards{height:90%;}
+#card{height:65%;width:25%;}
+#card-content{height:43%;}
+}
+
+
+@keyframes zoom{from{transform:scale(0.8);opacity:0;} to{opacity:1;transform:scale(1);}}
+</style>
+
+<body onscroll="scrollFunction()">
+<div id="top">
+<div id="images">
+<img src="images/work_time.jpeg">
+<img src="images/work_app.jpeg">
+<img src="images/work_design.jpeg">
+<img src="images/work_support.jpeg">
+<img src="images/work.jpeg">
+<img src="images/work1.jpeg">
+<img src="images/work2.jpeg">
+<img src="images/work3.jpeg">
+</div>
+<p>Work @ CalciteX</p>
+<p>At CalciteX we are always looking for passionate and talented people</p>
+</div>
+
+<div id="test">
+
+<div id="test-slide">
+
+<div id="test-content">
+<!--<i class="fa fa-user-circle-o"></i>-->
+<div style="background-image:url('testimonials/test1.jpeg')" id="test-image"></div>
+<h2>Khushboo Bhatia</h2>
+<p>This organization provided me with an excellent platform to establish my skills and knowledge in the corporate world. Even though I was a fresher, I felt assured of learning new skills, mainly programming languages like Python and Java. I am now confident of my potential and confident about my Software Development career.</p>
+</div>
+
+<div id="test-content">
+<!--<i class="fa fa-user-circle-o"></i>-->
+<div style="background-image:url('testimonials/test2.jpeg')" id="test-image"></div>
+<h2>Shivani Sharma</h2>
+<p>I have gained strong technical skills and applied them to real-world projects. With proper guidance, I have personally developed Applications for E-Commerce and linked them with Payment Gateways.  Since being in the Last year of my undergraduate degree, I feel confident after leading and developing a Major Project.</p>
+</div>
+
+<div id="test-content">
+<!--<i class="fa fa-user-circle-o"></i>-->
+<div style="background-image:url('testimonials/test3.jpeg')" id="test-image"></div>
+<h2>Sai Rohith Reddy</h2>
+<p>The Interview process was smooth after I Enchnaced my Web / App development skills. I was able to apply the skills I learned at my University; I was able to execute multiple projects in Python and C++; designed various Algorithms for Game development. My passion lies in Game development, and I plan to continue sharpening the skills I have acquired in this term.</p>
+</div>
+
+<div id="test-content">
+<!--<i class="fa fa-user-circle-o"></i>-->
+<div style="background-image:url('testimonials/test1.jpeg')" id="test-image"></div>
+<h2>Khushboo Bhatia</h2>
+<p>This organization provided me with an excellent platform to establish my skills and knowledge in the corporate world. Even though I was a fresher, I felt assured of learning new skills, mainly programming languages like Python and Java. I am now confident of my potential and confident about my Software Development career.</p>
+</div>
+
+</div>
+
+<div id="test-box">
+<button style="border:5px solid black;width:30px;height:30px;background:white;" class="button" onclick="buttonfun(0)"></button>
+<button class="button" onclick="buttonfun(1)"></button>
+<button class="button" onclick="buttonfun(2)"></button>
+</div>
+
+</div>
+
+<div id="perks">
+
+<div class="perks-content">
+<i class="fa fa-wrench" style="font-size:80px;color:#5064d0"></i>
+<h2>Build what you want to build</h2>
+<p>We encourage you to build what you want to build, with technologies you love. We work on a lot of tools and projects. You can join one that you find interesting or start something new of your own.</p>
+</div>
+
+<div class="perks-content">
+<i class="fa fa-briefcase" style="font-size:80px;color:#5064d0"></i>
+<h2>Salary Benefits</h2>
+<p>We’re a revenue positive, a bootstrapped startup that pays above market rates, and higher salary hikes than most of the other companies.</p>
+</div>
+
+<div class="perks-content">
+<i class="fa fa-heart" style="font-size:80px;color:#5064d0"></i>
+<h2>Flexible Vacation Policy</h2>
+<p>We believe in a flexible vacation policy. The idea: You’re free to take as much time off as you choose, as long as you get your job done – in time. It’s a focus on producing great results, rather than just putting in the hours.</p>
+</div>
+
+<div class="perks-content">
+<i class="fa fa-headphones" style="font-size:80px;color:#5064d0"></i>
+<h2>A Relaxed, Tension Free Environment</h2>
+<p>We are a bunch of fun loving people who don’t like to be bossed around. Work from anywhere and whenever you want, as long as you get your job done. We value what you do, rather than when and where you do it.</p>
+</div>
+
+<div class="perks-content">
+<i class="fa fa-handshake-o" style="font-size:80px;color:#5064d0"></i>
+<h2>Work On Bleeding Edge Tech</h2>
+<p>We are obsessed with Technology. We use bleeding edge tools to get stuff done and contribute to Open Source Projects. You get to learn, work and play around with the latest technologies that we use.</p>
+</div>
+
+<div class="perks-content">
+<i class="fa fa-home" style="font-size:80px;color:#5064d0"></i>
+<h2>Good work-life balance</h2>
+<p>Your personal growth is vital to us, and we’ll give you everything you need to make it happen.</p>
+</div>
+
+</div>
+
+<!--<div id="bottom">
+
+<h2>Open Positions</h2>
+
+<div id="bottom-box">
+<div id="bottom-content">
+<h2>Software Development</h2>
+<a href="https://forms.gle/4pSkmkoYtma6WJnm6">Submit Details</a>
+</div>
+
+<div id="bottom-content">
+<h2>Sales</h2>
+<a href="https://forms.gle/nTjocdbKgomHH4SA7">Submit Details</a>
+</div>
+
+<div id="bottom-content">
+<h2>Human Resources</h2>
+<a href="https://forms.gle/YVyuKJspe92vTRQk7">Submit Details</a>
+</div>
+</div>
+
+</div>-->
+
+<h1 style="text-align:center;margin-top:15%;">Open Positions</h1>
+<div id="bottom-cards">
+
+<div class="card">
+<div class="card-front">
+<div id="text-front">
+<p>Software Development</p>
+</div>
+</div>
+<div class="card-back">
+<img src="images/software.jpg"/>
+<div id="card-content">
+<p>Software Development</p>
+<p>We at CalciteX encourage you to build what you want to develop, with technologies you love. We work on a lot of tools and projects. We are a platform where you can level up your Coding game!</p>
+<a href="https://forms.gle/4pSkmkoYtma6WJnm6">click here to apply >></a>
+</div>
+</div>
+</div>
+
+<div class="card">
+<div class="card-front">
+<div id="text-front">
+<p>Business Development</p>
+</div>
+</div>
+<div class="card-back">
+<img src="images/business.jpg"/>
+<div id="card-content">
+<p>Business Development</p>
+<p>Hone your skills in pursuing strategic opportunities. Cultivate valuable partnerships and professional relationships with our clients. Provide value to newly identified markets.</p>
+<a href="https://forms.gle/nTjocdbKgomHH4SA7">click here to apply >></a>
+</div>
+</div>
+</div>
+
+<div class="card">
+<div class="card-front">
+<div id="text-front">
+<p>Human Resources</p>
+</div>
+</div>
+<div class="card-back">
+<img src="images/resources.png"/>
+<div id="card-content">
+<p>Human Resources</p>
+<p>Source, Hire and Engage with Newly recruited Interns / Experienced Professionals. Find out the training they need, make them used to the working environment and Increase the productivity by assigning the right person the right task.</p>
+<a href="https://forms.gle/YVyuKJspe92vTRQk7">click here to apply >></a>
+</div>
+</div>
+</div>
+
+</div>
+
+</body>
+
+
+<script>
+
+document.oncontextmenu=context;
+
+function context(){
+return false;
+}
+
+function scrollFunction(){
+var perk=document.getElementsByClassName("perks-content");
+var perks=document.getElementById("perks");
+var ele=document.documentElement;
+var cards=document.getElementById("bottom-cards");
+
+if(perks.offsetTop-ele.scrollTop<200){
+	for(i=0;i<perk.length;i++){
+		perk[i].style.animationName="zoom";
+		perk[i].style.animationDuration="1.5s";
+		perk[i].style.animationTimingFunciton="linear";
+		perk[i].style.animationFillMode="both";
+		perk[i].style.animationDelay=i/6+"s";
+	}
+}
+
+if(cards.offsetTop-ele.scrollTop<300 & window.innerWidth>1500){
+	window.setTimeout(cardsFun,0);
+}
+
+if(cards.offsetTop-ele.scrollTop<200 & window.innerWidth<1500){
+	window.setTimeout(cardsFun,0);
+}
+
+}
+
+function cardsFun(){
+var ele=document.documentElement;
+var cards=document.getElementById("bottom-cards");
+var card=document.getElementsByClassName("card");
+var cardFront=document.getElementsByClassName("card-front");
+var cardBack=document.getElementsByClassName("card-back");
+	for(i=0;i<card.length;i++){
+		card[i].style.transform="rotateY(180deg)";
+		card[i].style.transition="1s";
+		card[i].style.transitionDelay=i/3+"s";
+		cardFront[i].style.display="none";
+		cardBack[i].style.display="block";
+		cardBack[i].style.transform="rotateY(-180deg)";
+		cardBack[i].style.transition="1s";
+	}
+}
+
+var interval=window.setInterval(testi,5000);
+var index=-1;
+var test=document.getElementById("test-slide");
+
+function testi(){
+index++;
+index=index%3;
+button_style((index+1)%3);
+if(index==0) test.style.animationName="first";
+if(index==1) test.style.animationName="second";
+if(index==2) test.style.animationName="three";
+test.style.animationDuration="1s";
+test.style.animationFillMode="both";
+}
+
+function buttonfun(button_index){
+clearInterval(interval);
+if(button_index==0) test.style.animationName="three";
+if(button_index==1) test.style.animationName="first";
+if(button_index==2) test.style.animationName="second";
+test.style.animationDuration="1s";
+test.style.animationFillMode="both";
+button_style(button_index);
+index=button_index-1;
+interval=window.setInterval(testi,5000);
+}
+
+function button_style(button_index){
+
+var ar=document.getElementsByClassName("button");
+for(i=0;i<ar.length;i++){
+	ar[i].style.border="2px";
+	ar[i].style.background="black";
+	ar[i].style.width="20px";
+	ar[i].style.height="20px";
+}
+
+ar[button_index].style.border="5px solid black";
+ar[button_index].style.background="white";
+ar[button_index].style.width="30px";
+ar[button_index].style.height="30px";
+
+}
+
+
+</script>
+
+
+
