@@ -50,6 +50,7 @@ body,html{height:100%;width:99.5%;}
 .card-back #card-content p:nth-child(2){margin-top:-5%;font-size:17px;line-height:25px;text-indent:10%;}
 .card-back #card-content a{transition:1s;text-decoration:none;}
 
+.card ::-webkit-scrollbar{width:0px;}
 .card-back a:hover{margin-left:2%;transition:1s;}
 #bottom-cards{height:100%;margin-top:3%;display:flex;justify-content:space-around;}
 
@@ -263,7 +264,7 @@ var perks=document.getElementById("perks");
 var ele=document.documentElement;
 var cards=document.getElementById("bottom-cards");
 
-if(perks.offsetTop-ele.scrollTop<200){
+if(perks.offsetTop-ele.scrollTop<350){
 	for(i=0;i<perk.length;i++){
 		perk[i].style.animationName="zoom";
 		perk[i].style.animationDuration="1.5s";
