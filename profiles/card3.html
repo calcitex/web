@@ -137,6 +137,12 @@ body,html{scroll-behavior:smooth;height:100%;}
 
 
 <script>
+document.oncontextmenu=context;
+
+function context(){
+return false;
+}
+
 window.onload=widthfun(0);
 
 function widthfun(index){
