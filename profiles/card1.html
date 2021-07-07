@@ -1,0 +1,155 @@
+<!doctype html>
+<title>Employee1</title>
+<style>
+body,html{scroll-behavior:smooth;height:100%;}
+#ourTeam{font-family:sans-serif;width:100%;height:100%;display:flex;width:100%;height:100%;color:#222244;}
+#ourTeam p{margin:0;}
+#ourTeam-left{width:50%;display:flex;background:#fff0d1;height:100vh;position:fixed;top:0;display:flex;flex-direction:column;justify-content:center;align-items:start;}
+#ourTeam-left p{padding-left:5%;animation:zoom 1s linear;}
+#ourTeam-left p:nth-child(1){margin-top:10%;font-size:40px;}
+#ourTeam-left p:nth-child(2){font-size:80px;font-weight:bolder;}
+#ourTeam-left img{width:100%;height:65%;margin:5% 0% 0% -5%;}
+#ourTeam-right{margin-left:50%;animation:content_anim 1s linear;height:min-content;width:50%;display:flex;flex-direction:column;align-items:start;padding:3% 2% 10% 5%;margin-top:0%;}
+#ourTeam-right .category{font-weight:bolder;width:max-content;cursor:pointer;margin-top:5%;border-bottom:2px solid #222244;padding:0px 0px 5px 0px;}
+#ourTeam-right .blocks{transition:2s;animation:trans 1s linear;}
+@keyframes trans{from{opacity:0} to{opacity:1;}}
+#ourTeam-right li{list-style-type:square;font-size:20px;font-weight:100;line-height:30px;}
+#ourTeam-right #designing{padding:0% 0% 0% 3%;}
+#ourTeam-right #innercategory{border-bottom:none;font-size:30px;font-weight:100;margin:5% 0% 0% 0%;}
+#ourTeam-right hr{width:100%;border-bottom:1px solid #eee;margin-top:8%;}
+#mainBody{width:100%;height:100%;background:#aaa;display:flex;flex-direction:row-reverse;}
+#image-cards{cursor:pointer;display:flex;justify-content:space-around;width:50%;height:40%;align-items:center;}
+#image-container{display:flex;flex-direction:column;width:33%;height:90%;justify-content:space-between;align-items:center;}
+#image-container:hover #profile{transform:translateY(-5%);}
+#image-container img{width:100%;height:70%;}
+#image-container p{font-size:20px;margin:0;}
+#image-container div{height:15%;}
+@keyframes zoom{from{opacity:0;transform:scale(0.5);} to{opacity:1;transform:scale(1);}}
+@keyframes content_anim{from{margin-left:100%;opacity:0;} to{margin-left:50%;opacity:1;}}
+@keyframes anim{from{width:100%;opacity:1;} to{width:0%;opacity:0;display:none;}}
+</style>
+<body>
+
+
+<div id="ourTeam">
+
+<div id="ourTeam-left">
+<p>Designer</p>
+<p>Employee1</p>
+<img id="profile" src="a.png"/>
+</div>
+
+<div id="ourTeam-right">
+
+<p class="category" onclick="widthfun(0)" >DESIGNING</p>
+<div class="blocks">
+<p id="innercategory">Role</p>
+<ul id="designing">
+<li>Leads strategy and design for all projects.</li>
+<li>Gathers business requirements and learns about customer needs.</li>
+<li>Plans user-journeys and prototypes interactions.</li>
+<li>Designs Interfaces and writes copy.</li>
+<li>Wears the “admin hat” on a Monday morning.</li>
+</ul>
+<p id="innercategory">Experience</p>
+<ul id="designing">
+<li>Leads strategy and design for all projects.</li>
+<li>Gathers business requirements and learns about customer needs.</li>
+<li>Plans user-journeys and prototypes interactions.</li>
+<li>Designs Interfaces and writes copy.</li>
+<li>Wears the “admin hat” on a Monday morning.</li>
+<hr/>
+</ul>
+</div>
+
+
+<p class="category" onclick="widthfun(1)">READING</p>
+<div class="blocks">
+<p id="innercategory">Role</p>
+<ul id="designing">
+<li>Leads strategy and design for all projects.</li>
+<li>Gathers business requirements and learns about customer needs.</li>
+<li>Plans user-journeys and prototypes interactions.</li>
+<li>Designs Interfaces and writes copy.</li>
+<li>Wears the “admin hat” on a Monday morning.</li>
+</ul>
+<p id="innercategory">Experience</p>
+<ul id="designing">
+<li>Leads strategy and design for all projects.</li>
+<li>Gathers business requirements and learns about customer needs.</li>
+<li>Plans user-journeys and prototypes interactions.</li>
+<li>Designs Interfaces and writes copy.</li>
+<li>Wears the “admin hat” on a Monday morning.</li>
+<hr/>
+</ul>
+</div>
+
+
+
+<p class="category" onclick="widthfun(2)">WRITING</p>
+<div class="blocks">
+<p id="innercategory">Role</p>
+<ul id="designing">
+<li>Leads strategy and design for all projects.</li>
+<li>Gathers business requirements and learns about customer needs.</li>
+<li>Plans user-journeys and prototypes interactions.</li>
+<li>Designs Interfaces and writes copy.</li>
+<li>Wears the “admin hat” on a Monday morning.</li>
+</ul>
+<p id="innercategory">Experience</p>
+<ul id="designing">
+<li>Leads strategy and design for all projects.</li>
+<li>Gathers business requirements and learns about customer needs.</li>
+<li>Plans user-journeys and prototypes interactions.</li>
+<li>Designs Interfaces and writes copy.</li>
+<li>Wears the “admin hat” on a Monday morning.</li>
+<hr/>
+</ul>
+</div>
+
+
+
+<p class="category" onclick="widthfun(3)">RESTING</p>
+<div class="blocks">
+<p id="innercategory">Role</p>
+<ul id="designing">
+<li>Leads strategy and design for all projects.</li>
+<li>Gathers business requirements and learns about customer needs.</li>
+<li>Plans user-journeys and prototypes interactions.</li>
+<li>Designs Interfaces and writes copy.</li>
+<li>Wears the “admin hat” on a Monday morning.</li>
+</ul>
+<p id="innercategory">Experience</p>
+<ul id="designing">
+<li>Leads strategy and design for all projects.</li>
+<li>Gathers business requirements and learns about customer needs.</li>
+<li>Plans user-journeys and prototypes interactions.</li>
+<li>Designs Interfaces and writes copy.</li>
+<li>Wears the “admin hat” on a Monday morning.</li>
+<hr/>
+</ul>
+</div>
+
+
+</div>
+</div>
+</body>
+
+
+<script>
+window.onload=widthfun(0);
+
+function widthfun(index){
+var elements=document.getElementsByClassName("category");
+var blocks=document.getElementsByClassName("blocks");
+for(i=0;i<elements.length;i++){
+	if(i==index){elements[i].style.width="100%";blocks[i].style.display="block";}
+	else{elements[i].style.width="max-content";blocks[i].style.display="none";}
+}
+var heighttop=elements[index].offsetTop;
+document.documentElement.scrollTop=heighttop+"px";
+}
+
+
+</script>
+
