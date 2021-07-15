@@ -152,7 +152,7 @@ border-radius:5px;
 transition:0.2s;
 }
 
-#navbar ul #links a:nth-child(1):hover,a:nth-child(4):hover,a:nth-child(7):hover{
+#navbar ul #links a:nth-child(1):hover,a:nth-child(4):hover,a:nth-child(7):hover,a:nth-child(8):hover{
 color:#eeb0df;
 border-bottom:2px solid #eeb0df;
 border-top:2px solid #eeb0df;
