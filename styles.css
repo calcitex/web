@@ -1255,7 +1255,8 @@ margin-right:10%;
 #footer p:nth-child(3){font-size:20px;font-family:blinker;margin-top:5%;}
 #footer p{font-size:20px;margin-top:0.5%;}
 #footer i{font-size:25px;}
-#footer a{cursor:pointer;text-decoration:none;}
+#footer a{cursor:pointer;text-decoration:none;color:white;}
+#footer a:hover{transform:scale(1.2) translateY(3px);transition:0.1s;}
 #footer div{margin-top:2%;width:5%;justify-content:space-between;}
 
 
