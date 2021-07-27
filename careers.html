@@ -465,6 +465,7 @@ window.location.pathname=address+profiles_list[index];
 
 window.onload=loadFunction;
 function loadFunction(){
+if(window.innerWidth<800){document.getElementById("Body").style.display="none";}
 document.documentElement.scrollTop=0;
 }
 
