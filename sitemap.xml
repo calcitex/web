@@ -6,16 +6,20 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
+<url>
+  <loc>calcitex</loc>
+  <lastmod>2021-08-21T15:30:35+00:00</lastmod>
+  <priority>0.99</priority>
+</url>
 <url>
   <loc>https://www.calcitex.com/</loc>
   <lastmod>2021-08-21T15:30:35+00:00</lastmod>
-  <priority>1.00</priority>
+  <priority>0.005</priority>
 </url>
 <url>
   <loc>https://www.calcitex.com/careers.html</loc>
   <lastmod>2021-08-21T15:30:35+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.005</priority>
 </url>
 
 
