@@ -23,6 +23,7 @@
 
 </head>
 
+
 <body onscroll="myfunction()">
 <div id="body" style="height:100%;">
 	<!--header-->
@@ -32,14 +33,14 @@
 	            <a onclick="document.documentElement.scrollTop=0;">CalciteX</a>
 		</div>
 		<div id="links">
-                <a onclick="document.documentElement.scrollTop=0;">Home</a>
-                <a onclick="document.documentElement.scrollTop=document.getElementById('aboutus').offsetTop-60;">About&nbspUs</a>
-                <a onclick="document.documentElement.scrollTop=document.getElementById('ourServices').offsetTop-60;">Services</a>
-                <a onclick="document.documentElement.scrollTop=document.getElementById('skills').offsetTop-60;">Skills</a>
-		<a onclick="document.documentElement.scrollTop=document.getElementById('Responsive').offsetTop-60;">Support</a>
-                <a onclick="document.documentElement.scrollTop=document.getElementById('workflow').offsetTop-60;">Work</a>
+                <a onclick="navbar_fun(event,'Home')">Home</a>
+                <a onclick="navbar_fun(event,'aboutus')">About&nbspUs</a>
+                <a onclick="navbar_fun(event,'ourServices')">Services</a>
+                <a onclick="navbar_fun(event,'skills')">Skills</a>
+		<a onclick="navbar_fun(event,'Responsive')">Support</a>
+                <a onclick="navbar_fun(event,'workflow')">Work</a>
 		<!--<a href="#pricing">Pricing</a>-->
-                <a onclick="document.documentElement.scrollTop=document.getElementById('contact').offsetTop-60;">Contact&nbspUs</a>
+                <a onclick="navbar_fun(event,'contact')">Contact&nbspUs</a>
 		<a href="careers.html">Careers</a>
 		</div>
 		<div>
@@ -49,15 +50,25 @@
 	</div>
 	<div id="headerImg"></div>
 	<div id="header">
-
             <!--<div class="logo">
                 <img src="logoCalcitex.JPG">
             </div>-->
-
-	    <div class="navbar">
-		<p>Calcite X</p>
-		<p>Shaping the Uncut</p>
+	<div id="M_navbar">
+		<a onclick="navbar_fun(event,'Home')">Home</a>
+                <a onclick="navbar_fun(event,'aboutus')">About&nbspUs</a>
+                <a onclick="navbar_fun(event,'ourServices')">Services</a>
+                <a onclick="navbar_fun(event,'skills')">Skills</a>
+		<a onclick="navbar_fun(event,'Responsive')">Support</a>
+                <a onclick="navbar_fun(event,'workflow')">Work</a>
+                <a onclick="navbar_fun(event,'contact')">Contact&nbspUs</a>
+		<a href="careers.html">Careers</a>
 	</div>
+	    <div class="navbar">
+		<p>CalciteX</p>
+		<p>Shaping the Uncut</p>
+		<img id="M_navbar_logo" src="images/logo2.png">
+	</div>
+	<img id="M_navbar_menu" onclick="document.getElementById('M_navbar').style.display='flex';" src="icons/menu.png"/>
 
 
 	<!--	<div class="mainBox">
@@ -76,7 +87,7 @@
 	<!--About us-->
 <div id="aboutus" style="height:100%;width:100%;">
 <div id="leftbox">
-<p style="white-space:pre;color:#c6fdff;font-size:80px;font-family:leftTextfont;">
+<p>
 WHAT
 WE 
 DO?
@@ -88,6 +99,52 @@ DO?
 Our modest list of services to
 suit all your digital needs
 </p>-->
+</div>
+
+<!--mobile about us right box-->
+<div id="M_about">
+	<div id="M_top_about">
+		<h2>Clean & Modern</h2>
+		<button><img onclick="aboutContent(event)" src="icons/add.png"/></button>
+	</div>
+		<div id="M_content_about">
+			A fabulous collection of unique design ideas with custom-made interfaces.
+		</div>
+	<div id="M_top_about">
+		<h2>Unique Design</h2>
+		<button><img  onclick="aboutContent(event)" src="icons/add.png"/></button>
+	</div>
+		<div id="M_content_about">
+			Modern, Industrial, Clean design….and the list goes on. 
+		</div>
+	<div id="M_top_about">
+		<h2>Cool Staff</h2>
+		<button><img  onclick="aboutContent(event)" src="icons/add.png"/></button>
+	</div>
+		<div id="M_content_about">
+			Let’s be honest, everyone looks for a “cool” staff to work with.
+		</div>
+	<div id="M_top_about">
+		<h2>Pixel Perfect</h2>
+		<button><img  onclick="aboutContent(event)" src="icons/add.png"/></button>
+	</div>
+		<div id="M_content_about">
+			Custom Tailored To Match Your Needs And Requirements
+		</div>
+	<div id="M_top_about">
+		<h2>Responsive</h2>
+		<button><img  onclick="aboutContent(event)" src="icons/add.png"/></button>
+	</div>
+		<div id="M_content_about">
+			Responsiveness is the essential mix of flexible grids and layouts, images, and an intelligent use of media queries.
+		</div>
+	<div id="M_top_about">
+		<h2>Great Support</h2>
+		<button><img  onclick="aboutContent(event)" src="icons/add.png"/></button>
+	</div>
+		<div id="M_content_about">
+			Trouble-free support is what we offer.
+		</div>
 </div>
 
 <div id="rightbox">
@@ -337,7 +394,7 @@ Trouble-free support is what we offer.
  <!--<h1 class="heading" id="ourServicesheading" style="background:black;color:rgb(214, 199, 206);padding-top:50px; text-align: center; ">OU<span style="font-weight: bolder; color:rgb(255,2,108); font-size: 3rem;">R</span> SERVICES</h1>-->
 	<div id="ourServices">
 	<div id="mainService">
-	<div id="content" style="width:35%;height:400px;padding-bottom:50px;border-radius:10px;margin-top:0px;margin-left:0%;border:1px solid transparent;">
+	<div id="content">
 	<div id="heading" >
 	OUR
 	SERVICES
@@ -346,8 +403,9 @@ Trouble-free support is what we offer.
 
 	</div>
 	</div>
-
-	<div style="width:40%;height:150%;margin-left:20%;margin-top:300px;">
+	<div style="width:100%;height:100%;border:1px solid transparent;" id="M_services_content"><p style="font-size:30px;color:red;"></p></div>
+	
+	<div id="D_services_content" style="width:40%;height:150%;margin-left:20%;margin-top:300px;">
 
 	<div  onclick="ServiceFunction()" id="main" style="width:100px;height:100px;border-radius:10%;display:flex;flex-direction:column;" >
 	<img alt="calcitex" class="imgServices" style="width:100px;height:100px;margin:50% 50%;transform-origin:15% 15%;" src="icons_color/pin.png"/>
@@ -386,14 +444,14 @@ Trouble-free support is what we offer.
 	<div id="skills">
   <!--  <h1 class="heading" style="color:BLACK; text-align: center; ">ABOUT SK<span style="font-weight: bolder; color:rgb(255,2,108); font-size: 3rem;">I</span>LLS</h1>-->
 	<div id="skillsLeft">
-	OUR<br/>
-	SKILLS
+OUR
+SKILLS
 	</div>
 	
     <div class="skills">
                 <div class="skill-bars">
                     <div class="bar">
-			<div style="width:20%;font-size:50px;">
+			<div>
 			93%
 			</div>
 			<div style="width:80%;">
@@ -406,7 +464,7 @@ Trouble-free support is what we offer.
 			</div>
                     </div>
                     <div class="bar">
-			<div style="width:20%;font-size:50px;">
+			<div>
 			80%
 			</div>
 			<div style="width:80%;">
@@ -419,12 +477,12 @@ Trouble-free support is what we offer.
 			</div>
                     </div>                   
                     <div class="bar">
-			<div style="width:20%;font-size:50px;">
+			<div>
 			88%
 			</div>
 			<div style="width:80%;">
                         <div class="info">
-                            <span>DATABASE MANAGEMENT</span>
+                            <span>DATABASE&nbspMANAGEMENT</span>
                         </div>
                         <div class="progress-line jquery">
                             <span></span>
@@ -432,7 +490,7 @@ Trouble-free support is what we offer.
 			</div>
                     </div>
                     <div class="bar">
-			<div style="width:20%;font-size:50px;">
+			<div>
 			82%
 			</div>
 			<div style="width:80%;">
@@ -445,7 +503,7 @@ Trouble-free support is what we offer.
 			</div>
                     </div>
                     <div class="bar">
-			<div style="width:20%;font-size:50px;">
+			<div>
 			90%
 			</div>
 			<div style="width:80%;">
@@ -578,10 +636,10 @@ Trouble-free support is what we offer.
 	<div id="ResponsiveBox">
 
 	<div class="ResponsiveDiv">
-	<div style="width:49%;height:80%;display:flex;align-items:center;"> 
-	<p style="font-size:80px;width:50%;height:50%;margin-left:10%;font-family:tomorrow;">
-	24/7<br/>
-	DEDICATED<br/>
+	<div id="div1"> 
+	<p>
+	24/7
+	DEDICATED
 	SUPPORT
 	</p>
 	</div>
@@ -589,41 +647,41 @@ Trouble-free support is what we offer.
 	</div>
 
 	<div class="ResponsiveDiv" >
-	<div style="width:30%;">
-	<img style="width:50%;height:50%;margin-left:25%;" src="icons/responsive.png">
+	<div id="div2">
+	<img src="icons/responsive.png">
 	<br/>
 	<p style="text-align:center;font-weight:bolder;font-family:tomorrow;">Responsive</p>
 	<br/>
-	<p style="text-align:center;width:70%;margin-left:20%;">A Positive team who are ready to answer your quires at the earliest</p>
+	<p>A Positive team who are ready to answer your quires at the earliest</p>
 	</div>
-	<div style="width:30%;">
-	<img style="width:50%;height:50%;margin-left:25%;" src="icons/chip.png">
+	<div id="div2">
+	<img src="icons/chip.png">
 	<br/>
 	<p style="text-align:center;font-weight:bolder;font-family:tomorrow;">Community</p>
 	<br/>
-	<p style="text-align:center;width:70%;margin-left:20%;">An interactive community for everyone to Explore and Innovate new Ideas</p>
+	<p>An interactive community for everyone to Explore and Innovate new Ideas</p>
 	</div>
-	<div style="width:30%;">
-	<img style="width:50%;height:50%;margin-left:25%;" src="icons/time.png">
+	<div id="div2">
+	<img src="icons/time.png">
 	<br/>
 	<p style="text-align:center;font-weight:bolder;font-family:tomorrow;">ShowCase</p>
 	<br/>
-	<p style="text-align:center;width:70%;margin-left:20%;">A perfect platform for everyone who want to showcase their Creativity and Technical Knowledge</p>
+	<p>A perfect platform for everyone who want to showcase their Creativity and Technical Knowledge</p>
 	</div>
 	</div>
 
 	<div class="ResponsiveDiv" >
-	<p style="width:80%;text-align:center;font-size:60px;font-family:tomorrow;color:#C6FDFF;">
-	DESIGN <img src="icons/add.png" style="width:5%;height:5%;"> DEVELOPMENT<br/>
-	&nbsp&nbsp&nbspMARKETING   <img src="icons/add.png" style="width:5%;height:5%;"> SOCIAL
+	<p id="div3">
+	DESIGN <img src="icons/add.png"> DEVELOPMENT<br/>
+	&nbsp&nbsp&nbspMARKETING   <img src="icons/add.png"> SOCIAL
 	</p>
 	</div>
 
 	<div class="ResponsiveDiv" id="Div1" >
-	<div style="width:49%;height:80%;display:flex;align-items:center;"> 
-	<p style="font-size:80px;width:50%;height:50%;margin-left:10%;font-family:tomorrow;">
-	24/7<br/>
-	DEDICATED<br/>
+	<div id="div1"> 
+	<p>
+	24/7
+	DEDICATED
 	SUPPORT
 	</p>
 	</div>
@@ -648,14 +706,14 @@ Trouble-free support is what we offer.
 	<div id="workflow">
 	<div id="workleftBox">
 	<p id="leftmsg">
-	HOW<br/>
-	WE<br/>
-	WORK?
+HOW
+WE
+WORK?
 	</p>
 	</div>
 	<div id="workrightBox">
 	<div id="videoBox">
-	<button style="border:none;background:none;margin-top:30%;" onclick="videoFunction()" id="nextButton" ><img style="width:70%;height:70%;" src="icons/plane4.png"></button>
+	<button style="border:none;background:none;" onclick="videoFunction()" id="nextButton" ><img style="width:70%;height:70%;" src="icons/plane4.png"></button>
 	<video style="width:100%;height:60%;display:none;margin-top:30%;" src="plane_video/plane.mp4" id="planeVideo">
 	</div>
 	<div id="rightmsg">Click the plane to see how we work</div>
@@ -871,9 +929,9 @@ Trouble-free support is what we offer.
     <!--contactus end-->
 	<div id="contact">
 		<div id="contact-left">
-		STAY<br/>
-		IN<br/>
-		TOUCH
+STAY
+IN
+TOUCH
 		</div>
 	
 		<div id="contact-right">
@@ -886,7 +944,7 @@ Trouble-free support is what we offer.
 				<input type="submit" value="submit">
 			</form>
 			<div id="contact-desc">
-				<div style="width:40%;">
+				<div>
 				
 				<p>Feel free to contact us anytime you want if you have any doubt about our services/packages</p>
 				</div>
@@ -936,7 +994,7 @@ Trouble-free support is what we offer.
 document.oncontextmenu=context;
 document.onselectstart=select;
 function context(){
-return false;
+return true;
 }
 
 function select(){
@@ -948,12 +1006,16 @@ window.onload=starter();
 
 function starter(){
 if(window.innerWidth<1000){
-document.getElementById("body").style.display="none";
-document.getElementById("mobile").style.display="block";
+document.getElementById("body").style.display="block";
+document.getElementById("mobile").style.display="none";
+document.getElementById("D_services_content").style.display="none";
+document.getElementById("rightbox").style.display="none"
 }
 else{
 document.getElementById("body").style.display="block";
 document.getElementById("mobile").style.display="none";
+document.getElementById("M_services_content").style.display="none";
+document.getElementById("M_about").style.display="none";
 }
 }
 
@@ -1007,6 +1069,21 @@ var employee={
 		"5<b>skills:</b>php",
 		"images/6.png"],
 };
+
+
+function navbar_fun(event,id_val){
+	if(id_val=="Home"){document.documentElement.scrollTop=0;}
+	else{
+		if(window.innerWidth>1000){
+			document.documentElement.scrollTop=document.getElementById(id_val).offsetTop-60;
+		}
+		else{
+			document.documentElement.scrollTop=document.getElementById(id_val).offsetTop-5;
+		}
+	}
+	if(event.target.parentNode.id=="M_navbar"){
+		event.target.parentNode.style.display="none";}
+}
 
 var employment=["CEO","Lead Software Developer","Coder","Full Stack Web Developer","Frontend","Designer"];
 
@@ -1140,33 +1217,56 @@ var contact=document.getElementById("contact");
 var footer=document.getElementById("footer");
 var arrow=document.getElementById("down-arrow");
 var scrollrecog=document.documentElement;
+var constant_distance=60;
+
+if(window.innerWidth<1000) constant_distance=0;
 
 if(about.offsetTop-scrollrecog.scrollTop>150){
-scrollrecog.scrollTop=about.offsetTop-60;
+scrollrecog.scrollTop=about.offsetTop-constant_distance;
 }
 else if(about.offsetTop-scrollrecog.scrollTop<=80 && service.offsetTop-scrollrecog.scrollTop>80){
-scrollrecog.scrollTop=service.offsetTop-60;
+scrollrecog.scrollTop=service.offsetTop-constant_distance;
 }
 else if(service.offsetTop-scrollrecog.scrollTop<=80 && skills.offsetTop-scrollrecog.scrollTop>80){
-scrollrecog.scrollTop=skills.offsetTop-60;
+scrollrecog.scrollTop=skills.offsetTop-constant_distance;
 }
 else if(skills.offsetTop-scrollrecog.scrollTop<=80 && responsive.offsetTop-scrollrecog.scrollTop>80){
-scrollrecog.scrollTop=responsive.offsetTop-60;
+scrollrecog.scrollTop=responsive.offsetTop-constant_distance;
 }
 else if(responsive.offsetTop-scrollrecog.scrollTop<=80 && workflow.offsetTop-scrollrecog.scrollTop>80){
-scrollrecog.scrollTop=workflow.offsetTop-60;
+scrollrecog.scrollTop=workflow.offsetTop-constant_distance;
 }
 else if(workflow.offsetTop-scrollrecog.scrollTop<=80 && contact.offsetTop-scrollrecog.scrollTop>80){
-scrollrecog.scrollTop=contact.offsetTop-60;
+scrollrecog.scrollTop=contact.offsetTop-constant_distance;
 }
 else if(contact.offsetTop-scrollrecog.scrollTop<=80 && footer.offsetTop-scrollrecog.scrollTop>80){
-scrollrecog.scrollTop=footer.offsetTop-60;
+scrollrecog.scrollTop=footer.offsetTop-constant_distance;
 }
 else if(footer.offsetTop-scrollrecog.scrollTop<=80){
 scrollrecog.scrollTop=0;
 }
 
 
+}
+
+function aboutContent(event){
+	var element=event.target.parentNode.parentNode.nextElementSibling;
+	if(element.style.opacity=="0" || element.style.opacity==""){
+		event.target.src="icons/cross.png";
+		event.target.style.animation="zoom 0.5s linear";
+		element.style.opacity="1";
+		element.style.transform="scaleY(1)";
+		element.style.height="auto";
+		event.target.parentNode.parentNode.style.borderRadius="10px 10px 3px 3px";
+	}
+	else{
+		event.target.src="icons/add.png";
+		event.target.style.animation="zoomBox 0.5s linear";
+		element.style.opacity="0";
+		element.style.transform="scaleY(0)";
+		element.style.height="0px";
+		event.target.parentNode.parentNode.style.borderRadius="10px";
+	}
 }
 
 

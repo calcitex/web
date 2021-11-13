@@ -3,7 +3,7 @@
 <link rel="icon" href="../images/logo.png"/>
 <style>
 body,html{scroll-behavior:smooth;height:100%;}
-#ourTeam{font-family:sans-serif;width:100%;height:100%;display:flex;width:100%;height:100%;color:#222244;}
+#ourTeam{font-family:sans-serif;width:100%;height:100%;display:flex;flex-direction:row;width:100%;height:100%;color:#222244;}
 #ourTeam p{margin:0;}
 #ourTeam-left{width:50%;display:flex;background:#d1f0fd;height:100vh;position:fixed;top:0;display:flex;flex-direction:column;justify-content:center;align-items:start;}
 #ourTeam-left p{padding-left:3%;animation:zoom 1s linear;}
@@ -28,6 +28,14 @@ body,html{scroll-behavior:smooth;height:100%;}
 @keyframes zoom{from{opacity:0;transform:scale(0.5);} to{opacity:1;transform:scale(1);}}
 @keyframes content_anim{from{margin-left:100%;opacity:0;} to{margin-left:50%;opacity:1;}}
 @keyframes anim{from{width:100%;opacity:1;} to{width:0%;opacity:0;display:none;}}
+
+@media only screen and (max-width:1000px){
+#ourTeam-left{width:100%;margin:0% 0% 3% 0%;height:50%;overflow:hidden;position:static;}	
+#ourTeam{flex-direction:column;}
+#ourTeam-right{margin-left:0%;width:60%;}
+#ourTeam-left img{margin:0% 0% 0% 10%;}
+@keyframes content_anim{from{margin-left:100%;opacity:0;} to{margin-left:0%;opacity:1;}}
+}
 </style>
 <body>
 
@@ -146,7 +154,7 @@ Hello! I am Vishnu Kumar, when it comes to me, I have much interest in full-stac
 document.oncontextmenu=context;
 
 function context(){
-return false;
+return true;
 }
 
 window.onload=widthfun(0);

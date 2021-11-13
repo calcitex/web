@@ -28,6 +28,14 @@ body,html{scroll-behavior:smooth;height:100%;}
 @keyframes zoom{from{opacity:0;transform:scale(0.5);} to{opacity:1;transform:scale(1);}}
 @keyframes content_anim{from{margin-left:100%;opacity:0;} to{margin-left:50%;opacity:1;}}
 @keyframes anim{from{width:100%;opacity:1;} to{width:0%;opacity:0;display:none;}}
+
+@media only screen and (max-width:1000px){
+#ourTeam-left{width:100%;margin:0% 0% 3% 0%;height:50%;overflow:hidden;position:static;}	
+#ourTeam{flex-direction:column;}
+#ourTeam-right{margin-left:0%;width:60%;}
+#ourTeam-left img{margin:0% 0% 0% 10%;}
+@keyframes content_anim{from{margin-left:100%;opacity:0;} to{margin-left:0%;opacity:1;}}
+}
 </style>
 <body>
 
@@ -145,7 +153,7 @@ I’m proud that my web development work has helped my clients grow their busine
 document.oncontextmenu=context;
 
 function context(){
-return false;
+return true;
 }
 
 window.onload=widthfun(0);
