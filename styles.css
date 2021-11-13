@@ -1464,6 +1464,7 @@ margin-right:10%;
 #footer p:nth-child(1){font-size:25px;}
 #footer p:nth-child(2){font-size:20px;}
 #footer p{font-size:18px;}
+#footer div{width:70px;}
 }
 
 @keyframes mobile{from{width:0%;} to{width:100%;}}
