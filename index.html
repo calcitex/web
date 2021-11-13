@@ -68,7 +68,7 @@
 		<p>Shaping the Uncut</p>
 		<img id="M_navbar_logo" src="images/logo2.png">
 	</div>
-	<img id="M_navbar_menu" onclick="document.getElementById('M_navbar').style.display='flex';" src="icons/menu.png"/>
+	<div id="M_navbar_menuBox"><img id="M_navbar_menu" onclick="document.getElementById('M_navbar').style.display='flex';" src="icons/menu.png"/></div>
 
 
 	<!--	<div class="mainBox">
@@ -1078,7 +1078,7 @@ function navbar_fun(event,id_val){
 			document.documentElement.scrollTop=document.getElementById(id_val).offsetTop-60;
 		}
 		else{
-			document.documentElement.scrollTop=document.getElementById(id_val).offsetTop-5;
+			document.documentElement.scrollTop=document.getElementById(id_val).offsetTop-50;
 		}
 	}
 	if(event.target.parentNode.id=="M_navbar"){
@@ -1274,6 +1274,7 @@ function aboutContent(event){
 function myfunction(){
 var aboutBox=document.getElementsByClassName("doubleBox");
 var navbar=document.getElementById("ul");
+var M_navbar=document.getElementById("M_navbar_menuBox");
 var progress=document.getElementsByClassName("progress-line");
 var about=document.getElementById("aboutus");
 var icon=document.getElementById("headerImg");
@@ -1306,6 +1307,7 @@ icon.style.display="none";
 
 if(about.offsetTop-document.documentElement.scrollTop<100){
 navbar.style.background="black";
+M_navbar.style.background="#aaa5";
 for(i=0;i<aboutBox.length;i++){
 aboutBox[i].style.animationName="zoomBox";
 aboutBox[i].style.animationDuration="2s";

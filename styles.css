@@ -73,6 +73,11 @@ display:none;
 position:fixed;
 }
 
+#M_navbar_menuBox{
+display:none;
+position:fixed;
+}
+
 @keyframes arrowAnim{from{bottom:7%;} to{bottom:3%;}}
 
 #down-arrow{
@@ -234,6 +239,15 @@ width:0px;
 display:block;
 margin-top:40%;
 animation:M_logo 1s linear;
+}
+
+#M_navbar_menuBox{
+display:block;
+width:100%;
+position:fixed;
+top:0;
+left:0;
+height:50px;
 }
 
 #M_navbar_menu{
